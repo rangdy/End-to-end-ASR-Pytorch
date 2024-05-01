@@ -29,6 +29,7 @@ class LibriDataset(Dataset):
     def __init__(self, path, split, tokenizer, bucket_size, ascending=False):
         # Setup
         self.path = path
+        print(path, 'path')
         self.bucket_size = bucket_size
 
         # List all wave files
